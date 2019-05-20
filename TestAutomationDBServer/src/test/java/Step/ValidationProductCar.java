@@ -16,18 +16,7 @@ public class ValidationProductCar {
 	@Given("^I'm on the main page$")
 	public void i_m_on_the_main_page(BrowserServices browserServices) throws Throwable {
 
-//	browserServices.SelectPageMain(mainWindow);
 		mainWindow = browserServices.SelectPopUpService();
-		System.out.println("Vai para cima do botão");
-//////////////////// Voltar depois//////////////////////////
-
-//		browserServices.browser.findElement(By.className("col-sm-4 clearfix")).click();
-		// System.out.println("clicou@@@@@@@@@");
-
-		// WebElement menuCar =
-		// browserServices.browser.findElement(By.linkText("sfHoverForce"));
-		// Actions actions2 = new Actions(browserServices.browser);
-		// actions2.moveToElement(menuCar).perform();
 
 		i_check_the_cart(browserServices);
 	}

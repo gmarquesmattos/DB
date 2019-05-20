@@ -31,15 +31,7 @@ public class SelectedProduct {
 	@Then("^Selected Product$")
 	public void selected_Product(BrowserServices browserServices) throws Throwable {
 
-		// mainWindow = browserServices.SelectPopUpService();
-
-		// WebElement me =
-		// browserServices.browser.findElement(By.className("pb-center-column col-xs-12
-		// col-sm-4"));
-
-		// String TextElement = me.getText();
-
-		// assertEquals("Faded Short Sleeve T-shirts", TextElement);
+		
 
 		AddProductCart apc = new AddProductCart();
 

@@ -14,7 +14,7 @@ public class OpenNavegator {
 
 		browserServices.OpenBrowserService();
 
-		// inserir_Login(browserServices);
+	
 		page_opened_successfully(browserServices);
 	}
 

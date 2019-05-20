@@ -10,7 +10,7 @@ public class ValidationOfValue {
 
 	@When("^I check the values$")
 	public void i_check_the_values(BrowserServices browserServices) throws Throwable {
-	////////////////////////ajustar//////////////////////////////
+
 		
 	
 	correct_value(browserServices);
@@ -18,7 +18,7 @@ public class ValidationOfValue {
 
 	@Then("^Correct value$")
 	public void correct_value(BrowserServices browserServices) throws Throwable {
-	 System.out.println("Entrar no metodo pagamento");
+	
 	
 		Payment p = new Payment();
 	

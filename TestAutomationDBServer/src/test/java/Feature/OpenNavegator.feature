@@ -6,7 +6,7 @@ Then Page opened successfully
     
     
 Scenario: Choose any product in the store
-Given I'm on the homepage
+Given I'm  the homepage
 When I choose a product
 Then Selected Product
   
@@ -16,7 +16,7 @@ Then Confirmation and open window
   
   
 Scenario: Validate product added to cart
-Given  I'm on the main page
+Given  I'm on the main pagen
 When I check the cart
 Then Product selected successfully
  

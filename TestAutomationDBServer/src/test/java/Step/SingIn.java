@@ -17,8 +17,6 @@ public class SingIn {
 	@Given("^main page$")
 	public void main_page(BrowserServices browserServices) throws Throwable {
 
-		
-
 		click_Sing_in(browserServices);
 
 	}
@@ -35,19 +33,11 @@ public class SingIn {
 	@Then("^success register page$")
 	public void success_register_page(BrowserServices browserServices) throws Throwable {
 
-		System.out.println("success_register_page");
 		mainWindow = browserServices.SelectPopUpService();
 
-		//WebElement me = browserServices.browser.findElement(By.className("page-heading"));
-		//String TextElement = me.getText();
-
-		//assertEquals("Authentication", TextElement);
-
-	
 		UserRegistration ur = new UserRegistration();
 		ur.cick_the_Create_an_account_button(browserServices);
-	
-	
+
 	}
 
 }
