@@ -15,7 +15,7 @@ public class Payment {
 
 		String mainWindow = browserServices.SelectPopUpService();
 
-		System.out.println("pagamento");
+		
 
 		browserServices.browser.findElement(By.className("bankwire")).click();
 
