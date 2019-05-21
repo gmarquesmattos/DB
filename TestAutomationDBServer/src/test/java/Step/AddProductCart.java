@@ -28,10 +28,13 @@ public class AddProductCart {
 	public void confirmation_and_open_window(BrowserServices browserServices) throws Throwable {
 
 		mainWindow = browserServices.SelectPopUpService();
+		
+		
+	String var = browserServices.browser.findElement(By.className("ajax_cart_product_txt ")).getText();
+	//	assertEquals("There is 1 item in your cart.", var);
 	
 
-		
-		
+
 		
 		
 		browserServices.browser.findElement(By.linkText("Proceed to checkout")).click();

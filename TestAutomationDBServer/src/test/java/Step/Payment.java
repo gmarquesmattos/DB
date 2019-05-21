@@ -27,11 +27,8 @@ public class Payment {
 
 		String mainWindow = browserServices.SelectPopUpService();
 
-		WebElement menu = browserServices.browser.findElement(By.linkText("Women"));
-		Actions actions = new Actions(browserServices.browser);
-		actions.moveToElement(menu).perform();
 
-		System.out.println("Moveu SIM");
+		
 
 		browserServices.browser.findElement(By.id("cart_navigation"))
 				.findElement(By.className("button btn btn-default button-medium")).click();

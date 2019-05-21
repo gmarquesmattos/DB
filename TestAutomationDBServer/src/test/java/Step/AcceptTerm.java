@@ -11,9 +11,9 @@ public class AcceptTerm {
 
 	@When("^I select term$")
 	public void i_select_term(BrowserServices browserServices) throws Throwable {
-		System.out.println("Termos");
+		
 		mainWindow = browserServices.SelectPopUpService();
-		System.out.println("Clicar termo");
+		
 		browserServices.browser.findElement(By.id("uniform-cgv")).click();
 	
 		to_Process(browserServices);
@@ -22,7 +22,7 @@ public class AcceptTerm {
 	@Then("^To Process$")
 	public void to_Process(BrowserServices browserServices) throws Throwable {
 	
-		System.out.println("estou para fechar");
+	
 		mainWindow = browserServices.SelectPopUpService();
 		browserServices.browser.findElement(By.name("processCarrier")).click();
 	
